@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            margin-top: 1%;
+        }
+        .container{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+           padding: 5%;
+            width: 40%;
+          min-height: 80vh;
+        }
+        form{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 4%;
+        }
+        h1{
+            text-align: center;
+            margin: 0;
+        }
+        form label{
+            display: block;
+        }
+        form input{
+            width: 100%;
+        }
+        input,label{
+            padding: 2%;
+        }
+        
+         input[type="submit"] {
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+     select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid black;
+      border-radius: 3px;
+    }
+    
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div><h1>Sign up</h1></div>
+        <form action="" id="form">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="batch">Batch:</label>
+          <select name="batch" id="batch">
+            <option value="sigma 2.0">sigma 2.0</option>
+            <option value="dsa">dsa</option>
+            <option value="c++ course">c++ course</option>
+          </select>
+        </div>
+        <div> <label for="age">Age:</label>
+        <input type="text" name="age" id="age"></div>
+        <div>
+            <label for="Email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div >
+        <input type="submit" value="sign up" id="form" class="submit">
+        </div>
+    </form>
+    </div>
+
+    
+</body>
+</html>
